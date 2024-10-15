@@ -53,7 +53,6 @@ XSFML::XSFMLDocument doc;
 XSFML::XSFML_LOAD(doc, SOURCE);
 XSFML::XSFML_PARSE(doc);
 
-std::vector<XSFML::XSFMLBlock> blocks;
 
 for (size_t i = 0; i < doc.blocks.size(); i++) {
     std::cout << "Block: " << doc.blocks[i].name << " Size: " << doc.blocks[i].attributes.size() << " [ID: " << doc.blocks[i]._id << " Anonymous?: " << doc.blocks[i].isAnonymous << "]" << std::endl;
